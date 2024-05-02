@@ -1,0 +1,29 @@
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 10px;
+    padding: 2em 4vw;
+    background-color: white;
+    max-width: 1400px;
+    margin: 2em auto;
+}
+
+.portNest {
+    background-color: white;
+    grid-area: port;
+
+}
+
+.portfolioItemImage {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.portfolio-h2 {
+    grid-column: 1 / -1;
+}
+
+.portfolioItemTextDiv>hgroup {
+    margin-bottom: 1em;
+}

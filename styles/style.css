@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555555;
+    background-color: #f7f7ff;
+}
+
+h1 {
+    color: #0b0b15;
+    font-size: 6em;
+}
+
+h2,
+h3 {
+    color: #0b0b15;
+}
+
+.orange-title {
+    color: #ff9301;
+    margin: 0
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'biography'
+        'sep'
+        'whatIDo'
+        'exp'
+        'port'
+        'con'
+        'footer';
+    margin: 0 auto;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: white;
+    padding: 1vw 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerIcon {
+    width: 2em;
+}
+
+.firstLetter::first-letter {
+    background-color: rgba(255, 147, 1, 0.5);
+    padding: 10px;
+    border-radius: 100%;
+    margin-right: -10px;
+}
+
+.firstLetter {
+    position: relative;
+}
+
+@media screen and (max-width: 1199px) {
+
+    .contact {
+        padding: 0 4vw;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    header .header-image-div {
+        display: none;
+    }
+
+    .biography {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div .whatIDo-cards {
+        flex-direction: column;
+    }
+
+    div .award-cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    div .portfolio {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div .contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+
+    h1 {
+        font-size: 3em;
+    }
+
+    li {
+        padding: 6px
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    li {
+        background-color: orange;
+        border-radius: 5%;
+        text-align: center;
+        padding: 5px;
+    }
+
+    header {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-div {
+        width: 100%;
+        padding: 4vw;
+    }
+
+    div .award-cards {
+        flex-direction: column;
+    }
+
+    .experience-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div .portfolio {
+        grid-template-columns: 1fr;
+    }
+
+}

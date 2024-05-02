@@ -1,0 +1,85 @@
+.contact {
+    grid-area: con;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    width: 100%;
+    margin: 2em auto;
+
+}
+
+
+.iconAdress {
+    display: flex;
+    padding: 1em 0;
+}
+
+.iconAdress>img {
+    width: 1.5em;
+    margin-right: 1em;
+}
+
+.Adresy {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact>h2 {
+    padding-bottom: 2em;
+}
+
+.Adresy>h3 {
+    padding-bottom: 1em;
+}
+
+.contact>h2 {
+    grid-column: 1 / -1;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px
+}
+
+form>h3 {
+    grid-column: 1 / -1;
+}
+
+form>textarea {
+    grid-column: 1 / -1;
+}
+
+input,
+textarea {
+    padding: 15px;
+}
+
+textarea {
+    padding-bottom: 4em;
+}
+
+.submitButton {
+    width: 10em;
+    background-color: black;
+    color: white;
+    outline: none;
+    border-radius: 5%;
+}
+
+.Subject {
+    grid-column: 1 / -1;
+
+}
+
+.mapEmbed {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: 2em;
+}
+
+address {
+    font-weight: bold;
+    font-style: normal;
+}
